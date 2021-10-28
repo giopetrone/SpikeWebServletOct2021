@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + " doGet in hello-servlet</h1>");
         out.println("</body></html>");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -27,7 +27,7 @@ public class HelloServlet extends HttpServlet {
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + " doPost </h1>");
         out.println("</body></html>");
     }
     public void destroy() {
